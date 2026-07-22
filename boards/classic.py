@@ -129,7 +129,10 @@ def build_classic_board() -> Board:
                 improvement_prices=[100, 100, 100, 100, 200],
             ),
             UtilityTile(
-                name="electric_company", group_id=4, price=150, rent_multiplier=[4, 10]
+                name="electric_company",
+                group_id=101,
+                price=150,
+                rent_multiplier=[4, 10],
             ),
             StreetTile(
                 name="states_avenue",
@@ -217,7 +220,7 @@ def build_classic_board() -> Board:
                 improvement_prices=[150, 150, 150, 150, 250],
             ),
             UtilityTile(
-                name="water_works", group_id=4, price=150, rent_multiplier=[4, 10]
+                name="water_works", group_id=101, price=150, rent_multiplier=[4, 10]
             ),
             StreetTile(
                 name="marvin_gardens",
