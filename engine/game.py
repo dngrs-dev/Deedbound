@@ -68,6 +68,8 @@ class Game:
         jail_position = self.board.find_tile_position(JailTile)
         player.position = jail_position
         player.in_jail = True
+        self.doubles_in_row = 0
+        self.pending_extra_turn = False
         player.skip_turns = self.board.get_tile(jail_position).skip_turns
         return [
             PlayerMoved(
